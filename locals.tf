@@ -7,7 +7,7 @@ locals {
   }
 
   workspaces = {
-    "ryanlive" = {
+    "tfe-workspace" = {
       description = "ryanlive"
       organization_name = var.organization_name
       project_id = module.project["ryanlive"].project_id

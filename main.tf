@@ -27,5 +27,10 @@ module "workspaces" {
   }
 }
 
+moved {
+  from = module.workspaces["ryanlive"]
+  to = module.workspaces["tfe-workspace"]
+}
+
 
 
