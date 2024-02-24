@@ -22,6 +22,13 @@ locals {
       project_id = module.project["ryanlive"].project_id
       vcs_repo_id = "${var.github_org_name}/rf-terraform-gh"
     }
+    "aws-vpc-workspace" = {
+      description = "aws-vpc-workspace"
+      execution_mode = "local"
+      organization_name = var.organization_name
+      project_id = module.project["ryanlive"].project_id
+      vcs_repo_id = "${var.github_org_name}/rf-terraform-aws-vpc"
+    }
 
   }
 }
