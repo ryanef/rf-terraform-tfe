@@ -20,6 +20,11 @@ module "workspaces" {
   execution_mode = each.value.execution_mode
   organization_name = each.value.organization_name
   project_id = each.value.project_id
+
+  vcs_repo = {
+    github_app_installation_id = data.tfe_github_app_installation.app.id
+    identifier = each.value.vcs_repo_id
+  }
 }
 
 
