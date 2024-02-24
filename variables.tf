@@ -14,3 +14,5 @@ variable "github_org_name" {
   default = "ryanef"
   description = "github account name"
 }
+
+variable "GITHUB_OWNER" {}
